@@ -10,3 +10,12 @@ getComputerChoice(
   function() { return "Paper";},
   function() { return "Scissors";}
 )
+
+function getHumanChoice() {
+  let choice = prompt("Enter rock, paper, or scissors!");
+  if (choice) return choice;
+  else {
+    console.error("No input")
+    return null;
+  }
+}
